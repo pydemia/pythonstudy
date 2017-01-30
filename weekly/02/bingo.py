@@ -54,34 +54,35 @@ class Bingo:
 
 #%%
 
-aa = Bingo(1, 50, (5, 5))
+tmp = Bingo(1, 50, (5, 5))
 
-aa.guess(1)
-aa.guess(2)
-aa.guess(3)
-aa.guess(4)
-aa.guess(5)
-aa.guess(6)
-aa.guess(7)
-aa.guess(8)
-aa.guess(9)
-aa.guess(25)
-aa.guess(20)
-aa.guess(14)
-aa.guess(29)
-aa.guess(28)
-aa.guess(31)
-aa.guess(15)
-aa.guess(10)
-aa.guess(17)
-aa.guess(18)
-aa.guess(42)
-aa.bingoTbl
-aa.printTbl
+tmp.guess(1)
+tmp.guess(2)
+tmp.guess(3)
+tmp.guess(4)
+tmp.guess(5)
+tmp.guess(6)
+tmp.guess(7)
+tmp.guess(8)
+tmp.guess(9)
+tmp.guess(25)
+tmp.guess(20)
+tmp.guess(14)
+tmp.guess(29)
+tmp.guess(28)
+tmp.guess(31)
+tmp.guess(15)
+tmp.guess(10)
+tmp.guess(17)
+tmp.guess(18)
+tmp.guess(42)
+tmp.bingoTbl
+tmp.printTbl
 
 #%% Modify it: Generate another bingo table and for competition.
 
 # 1. create another table for competition; with the same condition & size, containing the different numbers.
 # 2. Count 'bingo' lines in both of tables, at the end of the 'guess' method.(print it)
 # 3. make 'Bingo' competitive.
-# 4. Change the 'bingo' number; from a constant to the relative to its size.
+# 4. make a 'input checker step' in 'guess' method; only 'integer' can be used for the 'guess' method.
+# 5. Change the 'bingo' number; from a constant to the relative to its size.
