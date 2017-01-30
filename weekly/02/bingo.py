@@ -10,55 +10,6 @@ aa = splitor(numGen, 5)
 aaa = list(aa)
 data = pd.DataFrame(np.array(aaa))
 
-np.diagonal(data)
-np.array(aaa).diagonal()
-np.array(aaa)
-np.fliplr(np.array(aaa))
-np.fliplr(data)
-
-data.where(data == 23)
-np.where(data == 21)
-
-np.where(data == 26)
-data.values
-data == 11
-data.where(data == 11)
-any(data.values == 27)
-any(data == 11)
-any(data == 30)
-
-np.where(data.values == 27)
-data[np.where(data == 11)]
-
-np.NaN
-
-data2 = data.copy()
-data2.replace(value='_')
-nanArray = np.zeros((5, 5), dtype='int')
-nanArray.fill(np.nan)
-nanArray
-
-
-dd = pd.DataFrame(np.full((5, 5), np.nan)).fillna('-')
-
-
-x, y = np.where(data == 17)
-dd.iloc[3, 0] = '#'
-dd
-
-all(np.diagonal(dd) == '#')
-all(np.diagonal(np.fliplr(dd)) == '#')
-all(dd.iloc[:, 3].unique() == '#')
-all(dd.iloc[3, :].unique() == '#')
-np.where(dd == '#')
-
-all(np.diagonal(dd) == '#')
-sum(all(np.diagonal(np.fliplr(dd)) == '#'))
-
-sum([all(dd.iloc[:, i].unique() == '#') for i in dd.index])
-[all(dd.iloc[j, :].unique() == '#') for j in dd.columns]
-[all(dd.iloc[i, j].unique() == '#') for i in dd.index for j in dd.columns]
-
 #%%
 
 
