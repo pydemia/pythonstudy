@@ -86,3 +86,4 @@ tmp.printTbl
 # 3. make 'Bingo' competitive.
 # 4. make a 'input checker step' in 'guess' method; only 'integer' can be used for the 'guess' method.
 # 5. Change the 'bingo' number; from a constant to the relative to its size.
+
